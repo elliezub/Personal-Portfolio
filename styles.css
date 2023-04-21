@@ -1,0 +1,23 @@
+:root {
+    --darkest5: #190332;
+    --lightpurple: #c8adf6;
+    --medpurple: #570dfa;
+}
+
+
+
+
+
+header {
+    background-color: black;
+    color: var(--lightpurple);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    margin:0 auto 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
