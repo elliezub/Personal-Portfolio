@@ -1,12 +1,19 @@
 :root {
     --darkest5: #190332;
+    --darkest4: #05000b;
     --lightpurple: #c8adf6;
+    --lightpurple2:#baaaff;
+    --almostwhite:#d6cdff;
     --medpurple: #570dfa;
 }
 
 * {
     margin: 0;
     padding:0;
+}
+
+body {
+    background-color: var(--darkest4);
 }
 
 #navbar {
@@ -37,4 +44,49 @@ ul {
     display: block;
     font-size: 1rem;
     padding:1rem;
+}
+
+#sticky-sidebar {
+  display: flex; 
+  flex-direction: column;
+  z-index:10;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 40%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--medpurple);
+}
+
+#sticky-sidebar a {
+    padding: 13px 10px 13px 7px;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#intro {
+  width:400px; 
+  margin-left: 60px;
+}
+
+#welcome-section h1 {
+    color: var(--almostwhite);
+}
+
+#welcome-section p {
+    color: var(--lightpurple2);
+}
+
+#profilepic {
+    width: 70vw;
+    max-width:400px;
 }
