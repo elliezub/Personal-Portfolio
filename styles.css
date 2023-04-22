@@ -13,11 +13,12 @@
 }
 
 body {
-    background-color: var(--darkest4);
+    background-color: white;
 }
 
 #navbar {
-    background-color: black;
+    /* change nav background color */
+    background-color: var(--medpurple);
     color: var(--lightpurple);
     position:fixed;
     top:0;
@@ -63,12 +64,13 @@ ul {
     padding: 13px 10px 13px 7px;
 }
 
+/* END NAV THINGS */
+
 #welcome-section {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100vh;
 }
 
@@ -90,3 +92,59 @@ ul {
     width: 70vw;
     max-width:400px;
 }
+
+/* ABOUT SECTION START */
+
+/* this section includes ABOUT ME centered title */
+#about-section {
+max-width: 120rem;
+margin:auto;
+/* edit width of all sections! */
+height:100vh;
+padding-top: 5rem;
+}
+
+#about-section h2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 70px;
+}
+
+/* this does not include title */
+#about-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 8rem;
+max-width: 950px;
+margin: 2rem auto 0 auto;
+}
+
+#about-content {
+    margin-left: 60px;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    align-items: flex-start;
+}
+
+#skills div {
+    border: solid var(--medpurple);
+    border-radius: 20px;
+    background-color: var(--medpurple);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.3rem;
+    width: 5.8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* END ABOUT */
+
+/* START PROJECTS */
