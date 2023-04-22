@@ -4,11 +4,12 @@
     --medpurple: #570dfa;
 }
 
+* {
+    margin: 0;
+    padding:0;
+}
 
-
-
-
-header {
+#navbar {
     background-color: black;
     color: var(--lightpurple);
     position:fixed;
@@ -20,4 +21,20 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    z-index:10;
+}
+
+#nav-list {
+    display: flex;
+    margin-right:2em;
+}
+
+ul {
+    list-style: none;
+}
+
+#nav-list a {
+    display: block;
+    font-size: 1rem;
+    padding:1rem;
 }
