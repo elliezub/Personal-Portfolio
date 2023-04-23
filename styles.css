@@ -162,17 +162,27 @@ padding-left: .2rem;
 
 #project-section {
     height: 100vh;
-    max-width: 120rem;
     margin: auto;
+    text-align: center;
+
+}
+
+#projects-grid-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .project-bg {
 background-color: #570dfa;
-width: 200px;
-height: 200px;
+width: 400px;
+padding: 20px;
 }
 
 .project-image {
-    width:200px;
     height: auto;
+    width: 400px;
 }
