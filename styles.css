@@ -44,7 +44,10 @@ ul {
 #nav-list a {
     display: block;
     font-size: 1rem;
-    padding:1rem;
+    margin:.6rem;
+    padding:.7rem;
+    text-decoration: none;
+    color: var(--lightpurple2);
 }
 
 #sticky-sidebar {
@@ -120,8 +123,16 @@ max-width: 950px;
 margin: 2rem auto 0 auto;
 }
 
+#about-container h3 {
+    padding-bottom: 0.7rem;
+}
+
 #about-content {
     margin-left: 60px;
+}
+
+#skill-container h3 {
+padding-left: .2rem;
 }
 
 #skills {
@@ -148,3 +159,13 @@ margin: 2rem auto 0 auto;
 /* END ABOUT */
 
 /* START PROJECTS */
+
+#project-section {
+    height: 100vh;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.project-image {
+
+}
