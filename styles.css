@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding:0;
+    /* font-family:INSERT FONT FAMILY; */
 }
 
 body {
@@ -102,8 +103,9 @@ ul {
 #about-section {
 max-width: 120rem;
 margin:auto;
+height: 100vh;
+/* edit height or delete maybe */
 /* edit width of all sections! */
-height:100vh;
 padding-top: 5rem;
 }
 
@@ -156,14 +158,29 @@ padding-left: .2rem;
     margin-bottom: 1rem;
 }
 
+#resume {
+    text-align: center;
+    margin: 50px auto 0 auto;
+    background-color: var(--medpurple);
+    width: 80px;
+    padding: 13px;
+    border-radius: 30px;
+    color: white;
+    
+}
+
+#resume-a {
+    text-decoration: none;
+}
+
 /* END ABOUT */
 
 /* START PROJECTS */
 
 #project-section {
-    height: 100vh;
     text-align: center;
     padding: 2rem;
+/* figure out how to get the sticky not to touch the container */
 }
 
 #projects-grid-container {
@@ -171,8 +188,8 @@ padding-left: .2rem;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 5px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-bg {
@@ -190,6 +207,7 @@ padding-left: .2rem;
     position:relative;
     height: auto;
     width: 96%;
+    border-radius: 10px;
 }
 
 .project-bg p {
@@ -206,5 +224,15 @@ padding-left: .2rem;
     align-items: center;
     width: 60px;
     text-decoration: none;
-    color: var(--almostwhite);
+    color: white;
+}
+
+/* START CONTACT */
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    top: 0;
+    margin-top: 40px;
 }
