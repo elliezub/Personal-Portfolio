@@ -171,3 +171,8 @@ background-color: #570dfa;
 width: 200px;
 height: 200px;
 }
+
+.project-image {
+    width:200px;
+    height: auto;
+}
