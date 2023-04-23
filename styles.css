@@ -162,27 +162,49 @@ padding-left: .2rem;
 
 #project-section {
     height: 100vh;
-    margin: auto;
     text-align: center;
-
+    padding: 2rem;
 }
 
 #projects-grid-container {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 5px;
 }
 
 .project-bg {
-background-color: #570dfa;
-width: 400px;
-padding: 20px;
+    background-color: #570dfa;
+    width: 370px;
+    padding: 25px 20px;
+    margin: 9px;
+    border-radius: 30px;
+    min-width: 200px;
+    text-decoration: none;
+    color: var(--almostwhite);
 }
 
 .project-image {
+    position:relative;
     height: auto;
-    width: 400px;
+    width: 96%;
+}
+
+.project-bg p {
+    padding-top: 10px;
+}
+
+#seemore-button {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: var(--medpurple);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    text-decoration: none;
+    color: var(--almostwhite);
 }
