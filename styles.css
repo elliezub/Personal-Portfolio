@@ -166,6 +166,8 @@ padding-left: .2rem;
     margin: auto;
 }
 
-.project-image {
-
+.project-bg {
+background-color: #570dfa;
+width: 200px;
+height: 200px;
 }
