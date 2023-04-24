@@ -79,6 +79,20 @@ ul {
     color: white;
 }
 
+.hamburger {
+    display:none;
+}
+
+.bar {
+    display:block;
+    width:25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: aqua;
+}
+
 #sticky-sidebar {
   display: flex; 
   flex-direction: column;
@@ -104,6 +118,7 @@ ul {
     justify-content: center;
     align-items: center;
     height: 90vh;
+    margin-top:55px;
 }
 
 #hello {
@@ -318,6 +333,9 @@ footer {
 /*  @media */
 
 @media (max-width: 700px){
+    
+
+
     #projects-grid-container {
         grid-template-columns: 1fr;
     }
