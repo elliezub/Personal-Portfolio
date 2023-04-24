@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=League+Spartan:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+@media (prefers-reduced-motion: no-preference){
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
 :root {
     --darkest5: #190332;
     --darkest4: #05000b;
@@ -10,7 +18,27 @@
 * {
     margin: 0;
     padding:0;
+    font-family: 'League Spartan', sans-serif;
+
     /* font-family:INSERT FONT FAMILY; */
+}
+
+p   {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+hr {
+    width: 70vw;
+    border: solid var(--medpurple);
+    border-radius: 30%;
 }
 
 body {
@@ -20,7 +48,7 @@ body {
 #navbar {
     /* change nav background color */
     background-color: var(--medpurple);
-    color: var(--lightpurple);
+    color: white;
     position:fixed;
     top:0;
     left:0;
@@ -48,7 +76,7 @@ ul {
     margin:.6rem;
     padding:.7rem;
     text-decoration: none;
-    color: var(--lightpurple2);
+    color: white;
 }
 
 #sticky-sidebar {
@@ -75,9 +103,12 @@ ul {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
+#hello {
+    font-size: 2.6em;
+}
 
 #intro {
   width:400px; 
@@ -85,11 +116,11 @@ ul {
 }
 
 #welcome-section h1 {
-    color: var(--almostwhite);
+    color: var(--medpurple);
 }
 
 #welcome-section p {
-    color: var(--lightpurple2);
+    color: black;
 }
 
 #profilepic {
@@ -101,32 +132,38 @@ ul {
 
 /* this section includes ABOUT ME centered title */
 #about-section {
-max-width: 120rem;
-margin:auto;
-height: 100vh;
-/* edit height or delete maybe */
-/* edit width of all sections! */
-padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 120rem;
+    margin:10px auto 10px auto;
+    height: 90vh;
+    /* edit height or delete maybe */
+    /* edit width of all sections! */
 }
 
 #about-section h2 {
- display: flex;
- align-items: center;
- justify-content: center;
- height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 70px;
+}
+
+#about-section hr {
+    margin: 5px auto;
 }
 
 /* this does not include title */
 #about-container {
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-gap: 8rem;
+grid-gap: 3rem;
 max-width: 950px;
 margin: 2rem auto 0 auto;
 }
 
 #about-container h3 {
-    padding-bottom: 0.7rem;
+    margin-bottom: 10px;
 }
 
 #about-content {
@@ -142,6 +179,10 @@ padding-left: .2rem;
     flex-wrap: wrap;
     margin-right: 10px;
     align-items: flex-start;
+}
+
+#skills div:hover{
+    cursor:default;
 }
 
 #skills div {
@@ -162,7 +203,7 @@ padding-left: .2rem;
     text-align: center;
     margin: 50px auto 0 auto;
     background-color: var(--medpurple);
-    width: 80px;
+    width: 70px;
     padding: 13px;
     border-radius: 30px;
     color: white;
@@ -181,8 +222,16 @@ padding-left: .2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:0 auto;
+    margin:10px auto;
 /* figure out how to get the sticky not to touch the container */
+}
+
+#project-section h2 {
+    margin: 120px auto 40px auto;
+}
+
+#project-section hr {
+    margin: 0 auto 40px auto;
 }
 
 #projects-grid-container {
@@ -204,7 +253,7 @@ padding-left: .2rem;
     border-radius: 30px;
     min-width: 200px;
     text-decoration: none;
-    color: var(--almostwhite);
+    color: white;
 }
 
 .project-image {
@@ -215,18 +264,14 @@ padding-left: .2rem;
 }
 
 .project-bg p {
-    padding-top: 10px;
+    padding-top: 18px;
 }
 
 #seemore-button {
-    margin: 20px auto;
+    margin: 40px auto 0 auto;
     padding: 15px;
     background-color: var(--medpurple);
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
     text-decoration: none;
     color: white;
 }
@@ -235,20 +280,79 @@ padding-left: .2rem;
 
 #contact-section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height:100vh;
+    height: 300px;
     top: 0;
-    margin-top: 40px;
+    margin: 40px;
 }
 
+#contact-section h2 {
+    margin: 18px auto;
+}
 
+#contact-section hr {
+    margin-bottom: 30px;
+}
 
+#contact-section p {
+    text-align: center;
+    max-width: 800px;
+}
 
+#contact-section a {
+    text-decoration: none;
+    background-color: var(--medpurple);
+    color: white;
+    margin-top: 20px;
+    padding:15px;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 5px;
+}
 
 /*  @media */
 
 @media (max-width: 700px){
     #projects-grid-container {
         grid-template-columns: 1fr;
+    }
+    #about-section {
+        height:auto;
+    }
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 70vw;
+        text-align: center;
+    }
+    #about-content {
+        margin: 0;
+    }
+
+    #skills {
+        justify-content: center;
+        margin:0;
+    }
+    #skills div {
+        margin: 0 .5rem 1rem .5rem;
+    }
+
+    #project-section h2 {
+        margin-top: 70px;
+    }
+
+    p {
+        font-size: 90%;
+    }
+
+    h2 {
+        font-size: 1.7em;
     }
 }
