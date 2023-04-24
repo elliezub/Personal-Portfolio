@@ -178,25 +178,29 @@ padding-left: .2rem;
 /* START PROJECTS */
 
 #project-section {
-    text-align: center;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
 /* figure out how to get the sticky not to touch the container */
 }
 
 #projects-grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    max-width:900px;
+    grid-gap: 1rem;
+    margin: 0 50px;
+   
 }
 
 .project-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #570dfa;
-    width: 370px;
-    padding: 25px 20px;
-    margin: 9px;
+    padding:20px;
     border-radius: 30px;
     min-width: 200px;
     text-decoration: none;
@@ -205,9 +209,9 @@ padding-left: .2rem;
 
 .project-image {
     position:relative;
-    height: auto;
-    width: 96%;
-    border-radius: 10px;
+    height: calc(100%-6.8rem);
+    width: 100%;
+    border-radius: 20px;
 }
 
 .project-bg p {
@@ -235,4 +239,16 @@ padding-left: .2rem;
     height:100vh;
     top: 0;
     margin-top: 40px;
+}
+
+
+
+
+
+/*  @media */
+
+@media (max-width: 700px){
+    #projects-grid-container {
+        grid-template-columns: 1fr;
+    }
 }
