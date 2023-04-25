@@ -155,8 +155,8 @@ ul {
 }
 
 #profilepic {
-    width: 70vw;
-    max-width:400px;
+    width: 80vw;
+    max-width:500px;
     min-width:200px;
 }
 
@@ -235,7 +235,7 @@ padding-left: .2rem;
     text-align: center;
     margin: 50px auto 0 auto;
     background-color: var(--medpurple);
-    width: 70px;
+    width: 90px;
     padding: 13px;
     border-radius: 30px;
     color: white;
@@ -281,8 +281,8 @@ padding-left: .2rem;
     justify-content: center;
     align-items: center;
     background-color: #570dfa;
-    padding:20px;
-    border-radius: 30px;
+    padding:0 0 20px 0;
+    border-radius: 22px;
     min-width: 200px;
     text-decoration: none;
     color: white;
@@ -292,7 +292,7 @@ padding-left: .2rem;
     position:relative;
     height: calc(100%-6.8rem);
     width: 100%;
-    border-radius: 20px;
+    border-radius: 22px 22px 0 0;
 }
 
 .project-bg p {
