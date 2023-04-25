@@ -19,6 +19,7 @@
     margin: 0;
     padding:0;
     font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
 
     /* font-family:INSERT FONT FAMILY; */
 }
@@ -70,27 +71,34 @@ ul {
     list-style: none;
 }
 
-#nav-list a {
+.nav-link {
     display: block;
     font-size: 1rem;
     margin:.6rem;
     padding:.7rem;
     text-decoration: none;
     color: white;
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color:var(--lightpurple);
 }
 
 .hamburger {
     display:none;
+    cursor:pointer;
 }
 
 .bar {
     display:block;
-    width:25px;
+    width: 25px;
     height: 3px;
-    margin: 5px auto;
+    margin: 5px;
+    border-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: aqua;
+    background-color: white;
 }
 
 #sticky-sidebar {
@@ -332,9 +340,42 @@ footer {
 
 /*  @media */
 
-@media (max-width: 700px){
-    
+@media(max-width: 700px){
+/* HAMBURGER */
+    .hamburger {
+        display:block;
+    }
 
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    #nav-list {
+        position: fixed;
+        left:-100%;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+        background-color: #570dfa;
+        width:100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 0;
+        border-top: solid 1px white;
+    }
+    #nav-list.active {
+        left:0;
+    }
+
+/* HAMBURGER END */
 
     #projects-grid-container {
         grid-template-columns: 1fr;
@@ -360,10 +401,6 @@ footer {
     }
     #skills div {
         margin: 0 .5rem 1rem .5rem;
-    }
-
-    #project-section h2 {
-        margin-top: 70px;
     }
 
     p {
