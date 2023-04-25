@@ -42,6 +42,10 @@ hr {
     border-radius: 30%;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: white;
 }
@@ -60,6 +64,10 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index:10;
+}
+
+#header-myname {
+    font-size: 1.7em;
 }
 
 #nav-list {
@@ -115,11 +123,11 @@ ul {
 }
 
 #sticky-sidebar a {
-    padding: 13px 10px 13px 7px;
+    padding: 15px 10px 15px 7px;
 }
-
 /* END NAV THINGS */
 
+/* WELCOME */
 #welcome-section {
     display: flex;
     flex-direction: row-reverse;
@@ -149,11 +157,12 @@ ul {
 #profilepic {
     width: 70vw;
     max-width:400px;
+    min-width:200px;
 }
 
-/* ABOUT SECTION START */
+/* WELCOME END */
 
-/* this section includes ABOUT ME centered title */
+/* ABOUT SECTION START */
 #about-section {
     display: flex;
     flex-direction: column;
@@ -338,6 +347,10 @@ footer {
     margin-bottom: 5px;
 }
 
+#bot-icons {
+    display: none;
+}
+
 /*  @media */
 
 @media(max-width: 700px){
@@ -377,6 +390,26 @@ footer {
 
 /* HAMBURGER END */
 
+/* WELCOME */
+    #welcome-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 117px;
+        height: 400px;
+    }
+    #intro {
+        text-align: center;
+        margin:25px 15px;
+        width:auto;
+        font-size: 90%;
+    }
+
+    #intro h2, p {
+     Padding-top: 16px;
+    }
+/* WELCOME */
+
     #projects-grid-container {
         grid-template-columns: 1fr;
     }
@@ -409,5 +442,14 @@ footer {
 
     h2 {
         font-size: 1.7em;
+    }
+}
+
+@media (max-width:500px) {
+    #bot-icons {
+      display: block;
+    }
+    #sticky-sidebar {
+        display: none;
     }
 }
