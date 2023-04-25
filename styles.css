@@ -13,6 +13,7 @@
     --lightpurple2:#baaaff;
     --almostwhite:#d6cdff;
     --medpurple: #570dfa;
+    --greenaccent: #86fa3b;
 }
 
 * {
@@ -68,6 +69,13 @@ body {
 
 #header-myname {
     font-size: 1.7em;
+    text-decoration: none;
+    color:white;
+    transition: 0.3s ease-in-out;
+}
+
+#header-myname:hover {
+    color: var(--greenaccent);
 }
 
 #nav-list {
@@ -86,11 +94,11 @@ ul {
     padding:.7rem;
     text-decoration: none;
     color: white;
-    transition: 0.7s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .nav-link:hover {
-    color:var(--lightpurple);
+    color:var(--greenaccent);
 }
 
 .hamburger {
@@ -124,6 +132,15 @@ ul {
 
 #sticky-sidebar a {
     padding: 15px 10px 15px 7px;
+}
+
+.fa-brands {
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-brands:hover {
+    color:var(--greenaccent);
 }
 /* END NAV THINGS */
 
@@ -218,7 +235,6 @@ padding-left: .2rem;
 }
 
 #skills div {
-    border: solid var(--medpurple);
     border-radius: 20px;
     background-color: var(--medpurple);
     color: white;
@@ -229,6 +245,11 @@ padding-left: .2rem;
     width: 5.8rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+#skills div:hover {
+    background-color: var(--greenaccent);
 }
 
 #resume {
@@ -239,11 +260,16 @@ padding-left: .2rem;
     padding: 13px;
     border-radius: 30px;
     color: white;
+    transition: 0.3s ease-in-out;
     
 }
 
 #resume-a {
     text-decoration: none;
+}
+
+#resume:hover {
+    color: var(--greenaccent);
 }
 
 /* END ABOUT */
