@@ -7,11 +7,11 @@
 }
 
 :root {
-    --darkest5: #190332;
-    --darkest4: #05000b;
-    --lightpurple: #c8adf6;
-    --lightpurple2:#baaaff;
-    --almostwhite:#d6cdff;
+    --darkg: #37373d;
+    --lightg: #666778;
+    --lightpurple: #e6e4fc;
+    --almostwhite:#f6fffb;
+    /* DECIDE ALMOST WHITE BG COLOR */
     --medpurple: #570dfa;
     --greenaccent: #86fa3b;
 }
@@ -71,10 +71,14 @@ body {
     font-size: 1.7em;
     text-decoration: none;
     color:white;
+    
+}
+
+#header-myname span {
     transition: 0.3s ease-in-out;
 }
 
-#header-myname:hover {
+#header-myname span:hover {
     color: var(--greenaccent);
 }
 
@@ -89,7 +93,8 @@ ul {
 
 .nav-link {
     display: block;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 550;
     margin:.6rem;
     padding:.7rem;
     text-decoration: none;
@@ -113,7 +118,7 @@ ul {
     margin: 5px;
     border-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background-color: white;
 }
 
@@ -249,7 +254,7 @@ padding-left: .2rem;
 }
 
 #skills div:hover {
-    background-color: var(--greenaccent);
+    background-color: var(--darkg);
 }
 
 #resume {
@@ -269,6 +274,8 @@ padding-left: .2rem;
 }
 
 #resume:hover {
+    /* CHANGE SOMETHING ABOUT THIS,
+     MAYBE PUT RESUME SOMEWHERE ELSE */
     color: var(--greenaccent);
 }
 
@@ -400,7 +407,7 @@ footer {
         top:70px;
         gap:0;
         flex-direction: column;
-        background-color: #570dfa;
+        background-color: var(--lightpurple);
         width:100%;
         text-align: center;
         transition: 0.3s;
@@ -409,6 +416,13 @@ footer {
     .nav-item {
         margin: 0;
         border-top: solid 1px white;
+    }
+    .nav-item a {
+        color: var(--darkg)
+    }
+
+    .nav-item a:hover {
+        color: var(--medpurple);
     }
     #nav-list.active {
         left:0;
