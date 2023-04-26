@@ -266,6 +266,7 @@ padding-left: .2rem;
     border-radius: 30px;
     color: white;
     transition: 0.3s ease-in-out;
+    cursor:pointer;
     
 }
 
@@ -522,6 +523,7 @@ footer {
     #skills {
         justify-content: center;
         margin:0;
+        padding-top:16px;
     }
     #skills div {
         margin: 0 .5rem 1rem .5rem;
