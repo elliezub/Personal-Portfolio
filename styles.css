@@ -56,6 +56,7 @@ body {
     position:absolute;
     top:0;
     z-index: 0;
+    color: transparent;
 }
 
 #navbar {
@@ -74,12 +75,25 @@ body {
     z-index:10;
 }
 
+#leftnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#cat {
+    width:30px;
+    margin: 15px;
+
+}
+
 #header-myname {
     font-size: 1.7em;
     text-decoration: none;
     color:white;
-    
+    margin-top:4px;
 }
+
 
 #header-myname span {
     transition: 0.3s ease-in-out;
@@ -144,6 +158,10 @@ ul {
 
 #sticky-sidebar a {
     padding: 15px 10px 15px 7px;
+}
+
+#github {
+    padding-top:9.5px;
 }
 
 .fa-brands {
@@ -242,7 +260,7 @@ ul {
 #about-container {
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-gap: 3rem;
+grid-gap: 5rem;
 max-width: 950px;
 margin: 2rem auto 0 auto;
 }
@@ -252,7 +270,7 @@ margin: 2rem auto 0 auto;
 }
 
 #about-content {
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 #skill-container h3 {
@@ -409,7 +427,7 @@ padding-left: .2rem;
 
 #contact-section p {
     text-align: center;
-    max-width: 770px;
+    max-width: 750px;
 }
 
 #email-form-container {
