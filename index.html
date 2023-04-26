@@ -28,7 +28,7 @@
         <!-- START NAV LIST -->
         <ul id="nav-list" class="nav-items">
             <li class="nav-item">
-                <a href="#welcome-section" class="nav-link">HOME</a>
+                <a href="#top" class="nav-link">HOME</a>
             </li>
             <li class="nav-item">
                 <a href="#about-section" class="nav-link">ABOUT</a>
@@ -63,15 +63,18 @@
             <i class="fa-brands fa-twitter fa-xl"></i>
         </a>
     </div> 
+    <div id="top">hi</div>
     <main>
         <!-- START WELCOME SECTION -->
         <section id="welcome-section">   
             <img src="https://i.ibb.co/8stBBsC/Untitled538-20230424234107.png" 
             alt="profile drawing" id="profilepic">
             <div id="intro">
-            <h1 id="hello">HELLO WORLD</h1>
-            <h2>I'm Ellie, a front-end developer</h2>
-            <p>I love coding & cats</p>
+            <h1 class="intro-item" id="hello">HELLO WORLD</h1>
+            <h2 class="intro-item">I'm Ellie, a front-end developer</h2>
+            <p class="intro-item">I love coding & cats</p>
+            <a class="email-link intro-item" href="mailto:ellieslife@icloud.com" 
+            rel="noopener noreferrer" target="_blank">Say Hi 👋</a>
             </div>
         </section>
         <!-- END WELCOME SECTION -->
@@ -142,20 +145,18 @@
         <!-- END PROJECT SECTION -->
         <!-- START CONTACT SECTION -->
         <section id="contact-section">
-            <h2>CONTACT ME</h2>
+            <h2>CONTACT</h2>
             <hr>
             <p>Feel free to reach out if you have any questions or if you'd like to 
-                discuss potential opportunities. And of course, if you're looking to 
-                make new friends in the tech community, I'd love to chat with you!</p>
-                <!-- CONTACT FORM START -->
-                <!-- can mailto be a form action?? -->
-                <form action="mailto:ellieslife@icloud.com" id="form">
-                    <input type="name" placeholder="Your Name" id="name-input">
-                    <input type="text" placeholder="Please write your message here" id="textbox-input">
-                    <input type="button" value="Submit" id="submit-button">
+                discuss potential opportunities. Or even if you just want to be friends, I'd love to chat with you!</p>
+            <div id="email-form-container">
+                <form action="https://formspree.io/f/mayzavzb" id="form" method="POST">
+                        <input class="input-item" type="name" name="name" placeholder="Name" id="name-input" required>
+                        <input class="input-item" type="email" name="email" placeholder="Email" required>
+                        <textarea class="input-item" name="message" id="" cols="50" rows="6" placeholder="Message" required></textarea>
+                        <input type="submit" value="Submit" id="submit-button">
                 </form>
-                <!-- CONTACT FORM END -->
-        <a class="email-link" href="mailto:ellieslife@icloud.com" rel="noopener noreferrer" target="_blank">Say Hi 👋</a>
+                </div>
         </section>
         <!-- END CONTACT SECTION -->
         <footer>

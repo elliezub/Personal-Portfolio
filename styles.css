@@ -27,6 +27,7 @@
 
 p   {
     font-size: 1.2em;
+    line-height: 1.1;
 }
 
 h2 {
@@ -49,6 +50,12 @@ a {
 
 body {
     background-color: white;
+}
+
+#top {
+    position:absolute;
+    top:0;
+    z-index: 0;
 }
 
 #navbar {
@@ -164,8 +171,14 @@ ul {
 }
 
 #intro {
+    display: flex;
+    flex-direction: column;
   width:400px; 
-  margin-left: 60px;
+  margin-left: 80px;
+}
+
+.intro-item {
+    margin-top: 7px;
 }
 
 #welcome-section h1 {
@@ -174,6 +187,24 @@ ul {
 
 #welcome-section p {
     color: black;
+} 
+
+.email-link {
+    text-decoration: none;
+    background-color: var(--medpurple);
+    color: white;
+    margin-top: 11px;
+    width: 5.9rem;
+    padding:10px 13px 11px 13px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-link:hover {
+    background-color: var(--darkg);
 }
 
 #profilepic {
@@ -377,40 +408,31 @@ padding-left: .2rem;
 
 #contact-section p {
     text-align: center;
-    max-width: 800px;
+    max-width: 770px;
+}
+
+#email-form-container {
+    background-color: var(--lightpurple);
+    padding:7px 15px 20px 15px;
+    margin-top: 35px;
+    border-radius: 20px;
+    width: 60vw;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    justify-content: center;
-    align-items: center;
 }
 
-form input {
-    text-align: center;
-    margin: 10px;
+.input-item {
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
 }
 
-#contact-section a {
-    text-decoration: none;
-    background-color: var(--medpurple);
-    color: white;
-    margin-top: 20px;
-    padding:15px;
-    border-radius: 20px;
-    transition: 0.3s ease-in-out;
-}
-
-#contact-section a:hover {
-    background-color: var(--darkg);
-}
-
-footer {
-    text-align: center;
-    margin-bottom: 5px;
-}
 
 #submit-button {
     display: flex;
@@ -426,14 +448,26 @@ footer {
     border-radius: 20px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    margin: 0 auto
+}
+
+textarea {
+    margin-bottom: 20px;
+    width:100%;
 }
 
 #submit-button:hover {
     background-color: var(--darkg);
 }
 
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 #bot-icons {
     display: none;
+    margin-bottom: 10px;
 }
 
 /*  @media */
@@ -488,17 +522,14 @@ footer {
         justify-content: center;
         align-items: center;
         margin-top: 117px;
-        height: 400px;
+        height: 500px;
     }
     #intro {
+        align-items: center;
         text-align: center;
         margin:25px 15px;
         width:auto;
         font-size: 90%;
-    }
-
-    #intro h2, p {
-     Padding-top: 16px;
     }
 /* WELCOME */
 
@@ -544,5 +575,8 @@ footer {
     }
     #sticky-sidebar {
         display: none;
+    }
+    #welcome-section {
+        height:400px;
     }
 }
