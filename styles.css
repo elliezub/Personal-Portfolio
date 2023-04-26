@@ -94,7 +94,7 @@ ul {
 .nav-link {
     display: block;
     font-size: 1.2rem;
-    font-weight: 550;
+    font-weight: 500;
     margin:.6rem;
     padding:.7rem;
     text-decoration: none;
@@ -246,8 +246,8 @@ padding-left: .2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2.3rem;
-    width: 5.8rem;
+    height: 2.4rem;
+    width: 5.9rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     transition: 0.3s ease-in-out;
@@ -261,7 +261,7 @@ padding-left: .2rem;
     text-align: center;
     margin: 50px auto 0 auto;
     background-color: var(--medpurple);
-    width: 90px;
+    width: 5.9rem;
     padding: 13px;
     border-radius: 30px;
     color: white;
@@ -276,7 +276,7 @@ padding-left: .2rem;
 #resume:hover {
     /* CHANGE SOMETHING ABOUT THIS,
      MAYBE PUT RESUME SOMEWHERE ELSE */
-    color: var(--greenaccent);
+    background-color: var(--darkg);
 }
 
 /* END ABOUT */
@@ -315,10 +315,16 @@ padding-left: .2rem;
     align-items: center;
     background-color: #570dfa;
     padding:0 0 20px 0;
-    border-radius: 22px;
+    border-radius: 30px 30px 22px 22px;
     min-width: 200px;
     text-decoration: none;
     color: white;
+    transition: 0.3s ease-in-out;
+   /* MAYBE DO BOX SHADOW ?? OR SOME SHADOW BEHIND .. */
+}
+
+.project-bg:hover {
+    background-color: var(--darkg);
 }
 
 .project-image {
@@ -339,7 +345,14 @@ padding-left: .2rem;
     border-radius: 20px;
     text-decoration: none;
     color: white;
+    transition: 0.3s ease-in-out;
 }
+
+#seemore-button:hover {
+    background-color: var(--darkg);
+}
+
+
 
 /* START CONTACT */
 
@@ -348,7 +361,7 @@ padding-left: .2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 700px;
     top: 0;
     margin: 40px;
 }
@@ -366,6 +379,17 @@ padding-left: .2rem;
     max-width: 800px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+form input {
+    text-align: center;
+    margin: 10px;
+}
+
 #contact-section a {
     text-decoration: none;
     background-color: var(--medpurple);
@@ -373,6 +397,11 @@ padding-left: .2rem;
     margin-top: 20px;
     padding:15px;
     border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+#contact-section a:hover {
+    background-color: var(--darkg);
 }
 
 footer {
