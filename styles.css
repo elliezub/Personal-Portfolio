@@ -502,7 +502,7 @@ textarea {
 
 .custom-shape-divider-top-1682552844 {
     position: relative;
-    top: -41px;
+    top: -57px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -539,6 +539,7 @@ footer {
 footer p {
     font-size: 90%;
     margin: 0 10px;
+    color: var(--darkg);
 }
 
 #bot-icons {
@@ -549,7 +550,7 @@ footer p {
 
 /*  @media */
 
-@media(max-width: 700px){
+@media(max-width: 712px){
 /* HAMBURGER */
     .hamburger {
         display:block;
@@ -598,7 +599,7 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 117px;
+        margin-top: 140px;
         height: 500px;
     }
     #intro {
@@ -686,7 +687,7 @@ footer p {
     }
 
     #welcome-section {
-        height:400px;
+        height:600px;
     }
 
 }
