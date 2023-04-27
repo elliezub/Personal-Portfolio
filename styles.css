@@ -222,7 +222,6 @@ ul {
     align-items: center;
     height: 2.4rem;
     width: 6.2rem;
- 
 }
 
 .email-link:hover {
@@ -468,6 +467,11 @@ form {
     
 }
 
+textarea {
+    margin-bottom: 20px;
+    width:100%;
+    max-width: 470px;
+}
 
 #submit-button {
     display: flex;
@@ -483,14 +487,7 @@ form {
     border-radius: 20px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-    margin: 0 auto;
-    
-}
-
-textarea {
-    margin-bottom: 20px;
-    width:100%;
-    max-width: 470px;
+    margin: 0 auto;  
 }
 
 #submit-button:hover {
