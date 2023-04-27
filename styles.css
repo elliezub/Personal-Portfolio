@@ -424,13 +424,13 @@ padding-left: .2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 750px;
+    height: 780px;
     top: 0;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 #contact-section h2 {
-    margin: 18px auto 40px auto;
+    margin: 0px auto 40px auto;
 }
 
 #contact-section hr {
@@ -440,6 +440,7 @@ padding-left: .2rem;
 #contact-section p {
     text-align: center;
     max-width: 750px;
+    margin: 0 20px;
 }
 
 #email-form-container {
@@ -450,6 +451,7 @@ padding-left: .2rem;
     width: 60vw;
     max-width: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: 190px;
 }
 
 form {
@@ -536,6 +538,7 @@ footer {
 
 footer p {
     font-size: 90%;
+    margin: 0 10px;
 }
 
 #bot-icons {
@@ -644,16 +647,13 @@ footer p {
         margin: 105px auto 30px auto;
     }
 
-    #contact-section h2 {
-        margin: 34px auto 30px auto;
-    }
 
-    #project-section {
-        margin-bottom: 70px;
+    #contact-section h2 {
+        margin: 125px auto 30px auto;
     }
 
     #contact-section {
-        margin-bottom: 60px;
+        margin-bottom: 200px;
     }
 
     p {
@@ -677,12 +677,14 @@ footer p {
     }
 
     #about-section {
-        height: 850px;
+        height: 920px;
+        margin-top: 0;
     }
 
     #welcome-section {
         height:400px;
     }
+
 
     .custom-shape-divider-top-1682552844
     {display:none;
