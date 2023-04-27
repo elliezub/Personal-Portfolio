@@ -676,8 +676,12 @@ footer p {
         display: none;
     }
 
+    .custom-shape-divider-top-1682552844
+    {display:none;
+    }
+
     #about-section {
-        height: 920px;
+        height: 700px;
         margin-top: 0;
     }
 
@@ -685,9 +689,23 @@ footer p {
         height:400px;
     }
 
+}
 
-    .custom-shape-divider-top-1682552844
-    {display:none;
-    }
+@media (max-width: 400px) {
+    #about-section {
+        height: 800px;
+    } 
+}
 
+@media (max-width: 310px) {
+    #about-section {
+        height: 870px;
+    } 
+}
+
+
+@media (max-width:250px) {
+    #about-section {
+        height: 950px;
+    } 
 }
