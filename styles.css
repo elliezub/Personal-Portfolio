@@ -310,7 +310,7 @@ padding-left: .2rem;
 
 
 #skills div:hover {
-    animation: effect .7s;
+    animation: effect .7s ease-in-out;
     background-color: var(--darkpurple);
     cursor:default;
 }
