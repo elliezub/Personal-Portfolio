@@ -12,8 +12,9 @@
     --lightpurple: #e6e4fc;
     --almostwhite:#f6fffb;
     /* DECIDE ALMOST WHITE BG COLOR */
+    --darkpurple: #3b08ab;
     --medpurple: #570dfa;
-    --greenaccent: #86fa3b;
+    --greenaccent: #a3f75e;
 }
 
 * {
@@ -222,10 +223,12 @@ ul {
     align-items: center;
     height: 2.4rem;
     width: 6.2rem;
+    box-shadow: 0 2px 4px 0 rgba(87, 13, 250, 0.2),
+    0 3px 12px 0 rgba(87, 13, 250, 0.19);
 }
 
 .email-link:hover {
-    background-color: var(--darkg);
+    background-color: var(--darkpurple);
 }
 
 #profilepic {
@@ -288,10 +291,6 @@ padding-left: .2rem;
     align-items: flex-start;
 }
 
-#skills div:hover{
-    cursor:default;
-}
-
 #skills div {
     border-radius: 20px;
     background-color: var(--medpurple);
@@ -305,13 +304,31 @@ padding-left: .2rem;
     margin-bottom: 1rem;
     transition: 0.3s ease-in-out;
     padding-top:2px;
+    box-shadow: 0 2px 4px 0 rgba(87, 13, 250, 0.2),
+    0 3px 12px 0 rgba(87, 13, 250, 0.19);
 }
 
 
 #skills div:hover {
-    background-color: var(--darkg);
+    animation: effect .7s;
+    background-color: var(--darkpurple);
+    cursor:default;
 }
 
+@keyframes effect {
+    0% {
+        transform: rotate(4deg);
+    }
+    30% {
+        transform: rotate(-4deg);
+    }
+    60% {
+        transform: rotate(4deg);
+    }
+}
+
+/* 
+no resume button for now
 #resume {
     text-align: center;
     margin: 50px auto 0 auto;
@@ -330,10 +347,9 @@ padding-left: .2rem;
 }
 
 #resume:hover {
-    /* CHANGE SOMETHING ABOUT THIS,
-     MAYBE PUT RESUME SOMEWHERE ELSE */
     background-color: var(--darkg);
 }
+*/
 
 /* END ABOUT */
 
@@ -369,7 +385,7 @@ padding-left: .2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #570dfa;
+    background-color: var(--medpurple);
     padding:0 0 20px 0;
     border-radius: 30px 30px 22px 22px;
     min-width: 200px;
@@ -377,11 +393,10 @@ padding-left: .2rem;
     color: white;
     transition: 0.3s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   /* MAYBE DO BOX SHADOW ?? OR SOME SHADOW BEHIND .. */
 }
 
 .project-bg:hover {
-    background-color: var(--darkg);
+    background-color: var(--darkpurple);
 }
 
 .project-image {
@@ -407,11 +422,12 @@ padding-left: .2rem;
     text-decoration: none;
     color: white;
     transition: 0.3s ease-in-out;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 12px 0 rgba(0, 0, 0, 0.19);
 }
 
 #seemore-button:hover {
-    background-color: var(--darkg);
+    background-color: var(--darkpurple);
 }
 
 
@@ -491,7 +507,7 @@ textarea {
 }
 
 #submit-button:hover {
-    background-color: var(--darkg);
+    background-color: var(--darkpurple);
 }
 
 
