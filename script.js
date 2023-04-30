@@ -12,3 +12,8 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         hamburger.classList.remove("active");
         navList.classList.remove("active");
     }))
+
+const toggle = document.getElementById("toggle");
+toggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+})

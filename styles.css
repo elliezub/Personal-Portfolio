@@ -15,6 +15,7 @@
     --darkpurple: #3b08ab;
     --medpurple: #570dfa;
     --greenaccent: #a3f75e;
+    --darkbg: #100922;
 }
 
 * {
@@ -53,7 +54,68 @@ body {
     background-color: white;
 }
 
+/* TOGGLE */
+body.dark {
+    background-color: var(--darkbg);
+    color: white;
+}
 
+body.dark #ilovecats {
+    color:white;
+}
+
+body.dark .custom-shape-divider-top-1682552844 .shape-fill {
+    fill: var(--darkbg);
+}
+
+
+
+#jstoggle {
+    position:fixed; 
+    bottom:15px;
+    right:15px;
+    width: 60px; 
+    height:40px;
+    z-index: 3;
+  
+}
+
+.toggle {
+    opacity: 0;
+    position:absolute;
+}
+
+.toggle-label {
+    background-color: var(--medpurple);
+    width: 58px;
+    height:31px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    padding-left:7px;
+    padding-right: 6px;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+.toggle-label .switch {
+    background-color: white;
+    width:25px;
+    height:25px;
+    position: absolute;
+    left:3px;
+    top:3px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.toggle:checked + .toggle-label .switch {
+    transform: translateX(27px);
+}
+
+
+/* TOGGLE */
 #top {
     position:absolute;
     top:0;
@@ -176,6 +238,8 @@ ul {
 }
 /* END NAV THINGS */
 
+
+
 /* WELCOME */
 #welcome-section {
     display: flex;
@@ -206,9 +270,10 @@ ul {
     color: var(--medpurple);
 }
 
-#welcome-section p {
+#ilovecats {
     color: black;
 } 
+
 
 .email-link {
     text-decoration: none;
@@ -467,6 +532,7 @@ no resume button for now
     max-width: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     min-width: 190px;
+    z-index: 2;
 }
 
 form {
@@ -530,7 +596,7 @@ textarea {
 }
 
 .custom-shape-divider-top-1682552844 .shape-fill {
-    fill: white;
+    fill: rgb(255, 255, 255);
 }
 
 #footer-items {
@@ -561,12 +627,17 @@ footer p {
     margin-bottom: 10px;
 }
 
+
 /*  @media */
 
 @media(max-width: 712px){
 /* HAMBURGER */
     .hamburger {
         display:block;
+    }
+
+    #jstoggle {
+        display:none;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -689,6 +760,8 @@ footer p {
     #sticky-sidebar {
         display: none;
     }
+
+ 
 
     .custom-shape-divider-top-1682552844
     {display:none;
