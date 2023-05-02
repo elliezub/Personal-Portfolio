@@ -1,3 +1,7 @@
+/* Add padding to project section */
+/* maybe change the project section background */
+/* contact txt size too small  */
+
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=League+Spartan:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap');
 
 @media (prefers-reduced-motion: no-preference){
@@ -357,9 +361,9 @@ padding-left: .2rem;
 }
 
 #skills div {
-    border-radius: 20px;
-    background-color: var(--medpurple);
-    color: white;
+    border-radius: 5px;
+    background-color: var(--lightpurple);
+    color: var(--darkbg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,14 +373,14 @@ padding-left: .2rem;
     margin-bottom: 1rem;
     transition: 0.3s ease-in-out;
     padding-top:2px;
-    box-shadow: 0 2px 4px 0 rgba(87, 13, 250, 0.2),
-    0 3px 12px 0 rgba(87, 13, 250, 0.19);
+    /* box-shadow: 0 2px 4px 0 rgba(87, 13, 250, 0.2),
+    0 3px 12px 0 rgba(87, 13, 250, 0.19); */
 }
 
 
 #skills div:hover {
     animation: effect .7s ease-in-out;
-    background-color: var(--darkpurple);
+    color: var(--darkpurple);
     cursor:default;
 }
 
@@ -440,7 +444,7 @@ no resume button for now
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     max-width:900px;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     margin: 0 50px;
    
 }
