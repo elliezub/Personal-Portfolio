@@ -307,7 +307,6 @@ ul {
 }
 
 #profilepicmobile {
-    width: 100vw;
     display:none;
 }
 
@@ -694,7 +693,7 @@ footer p {
         justify-content: center;
         align-items: center;
         margin-top: 140px;
-        height: 500px;
+        height: 580px;
     }
     #intro {
         align-items: center;
@@ -710,6 +709,10 @@ footer p {
 
     #profilepicmobile {
         display:block;
+        position: relative;
+        margin: 40px 0 20px 0;
+        width: 95vw;
+        left: -60px;
     }
 /* WELCOME */
 
@@ -791,15 +794,32 @@ footer p {
     }
 
     #welcome-section {
-        height:600px;
+        height: 600px;
+    }
+
+    #profilepicmobile {
+        margin: 20px 20px 30px 0;
+        width: 120vw;
+        left: -75px;
     }
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 412px) {
+    #welcome-section {
+        height: 700px;
+        margin-top: 110px;
+    }
+    
     #about-section {
-        height: 800px;
+        height: 700px;
     } 
+
+    #profilepicmobile {
+        margin: 0 0 30px 0;
+        width: 160vw;
+        left: -90px;
+    }
 }
 
 @media (max-width: 310px) {
