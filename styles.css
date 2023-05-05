@@ -307,7 +307,7 @@ ul {
     background-color: var(--medpurple);
     color: white;
     margin-top: 50px;
-    padding:10px 13px 15px 15px;
+    padding:10px 13px 12.5px 15px;
     border-radius: 25px;
     transition: 0.3s ease-in-out;
     display: flex;
