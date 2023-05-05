@@ -64,9 +64,15 @@ body.dark {
     color: white;
 }
 
-body.dark #ilovecats {
-    color:white;
+body.dark #h2intro {
+    color: rgb(149, 121, 109);
 }
+
+body.dark #ilovecats {
+    color:rgb(149, 121, 109);
+}
+
+/* rgb(155, 110, 91) */
 
 body.dark .custom-shape-divider-top-1682552844 .shape-fill {
     fill: var(--darkbg);
