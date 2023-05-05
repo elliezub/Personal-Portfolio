@@ -258,8 +258,9 @@ ul {
 
 #leftblob {
     position:absolute;
-    top:-50px;
+    top:-100px;
     left: -500px; 
+    align-self: left;
     z-index: -1; 
     width: 1050px;
 }
@@ -659,6 +660,22 @@ footer p {
 
 
 /*  @media */
+
+@media (max-width: 1000px) {
+    #intro {
+        left: 275px;
+    }
+    #welcome-section h1 {
+        font-size:3rem;
+    }
+    #profilepic {
+        left: -190px;
+    }
+    #leftblob {
+        display:none;
+    }
+
+}
 
 @media(max-width: 712px){
     #leftblob {
