@@ -245,6 +245,8 @@ ul {
 
 
 /* WELCOME */
+
+
 #welcome-section {
     display: flex;
     flex-direction: row-reverse;
@@ -254,6 +256,14 @@ ul {
     margin-top:55px;
 }
 
+#leftblob {
+    position:absolute;
+    top:-50px;
+    left: -500px; 
+    z-index: -1; 
+    width: 1050px;
+}
+
 #hello-wrapper h1 {
     font-size: 2.6em;
 }
@@ -261,20 +271,26 @@ ul {
 
 #intro {
     display: flex;
+    position: relative;
+    left: 160px;
+    top: -30px;
     flex-direction: column;
-  width:400px; 
-  margin-left: 80px;
-}
-
-.intro-item {
-    margin-top: 7px;
+    margin-left: 100px;
+    min-width: 470px;
 }
 
 #welcome-section h1 {
     color: var(--medpurple);
+    font-size: 4.3rem;
+}
+
+#welcome-section h2 {
+ margin-top: 25px;
+ max-width: 425px;
 }
 
 #ilovecats {
+    margin-top:10px;
     color: black;
 } 
 
@@ -283,15 +299,16 @@ ul {
     text-decoration: none;
     background-color: var(--medpurple);
     color: white;
-    margin-top: 11px;
+    margin-top: 50px;
     padding:10px 13px 15px 15px;
-    border-radius: 20px;
+    border-radius: 25px;
     transition: 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2.4rem;
-    width: 6.2rem;
+    height: 3.3rem;
+    width: 7rem;
+    font-size: 1.2rem;
     box-shadow: 0 2px 4px 0 rgba(87, 13, 250, 0.2),
     0 3px 12px 0 rgba(87, 13, 250, 0.19);
 }
@@ -301,9 +318,13 @@ ul {
 }
 
 #profilepic {
-    width: 80vw;
-    max-width:1000px;
-    min-width:250px;
+    position: relative;
+    z-index: -1;
+    left: -100px;
+    top:20px;
+    width: 90vw;
+    max-width:900px;
+    min-width:800px;
 }
 
 #profilepicmobile {
@@ -640,6 +661,9 @@ footer p {
 /*  @media */
 
 @media(max-width: 712px){
+    #leftblob {
+        display:none;
+    }
 /* HAMBURGER */
     .hamburger {
         display:block;
@@ -700,7 +724,7 @@ footer p {
         text-align: center;
         margin:25px 15px;
         width:auto;
-        font-size: 90%;
+        position: static;
     }
 
     #profilepic {
