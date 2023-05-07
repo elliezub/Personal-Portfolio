@@ -662,8 +662,12 @@ footer p {
 
 #bot-icons {
     display: none;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 10px;
+}
+
+#bot-icons a {
+    padding: 5px;
 }
 
 
@@ -741,8 +745,9 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 140px;
-        height: 580px;
+        margin-top: 150px;
+        margin-bottom: 30px;
+        height: 600px;
     }
     #intro {
         align-items: center;
