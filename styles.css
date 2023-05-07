@@ -46,6 +46,7 @@ h3 {
 
 hr {
     width: 70vw;
+    max-width: 1050px;
     border: solid var(--medpurple);
     border-radius: 30%;
 }
