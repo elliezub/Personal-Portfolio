@@ -259,14 +259,15 @@ ul {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    margin-top:55px;
+    margin: 55px auto 0 auto;
+    max-width: 1500px;
 }
 
 #leftblob {
     position:absolute;
-    top:-100px;
-    left: -500px; 
-    align-self: left;
+    top:-90px;
+    right:60vw; 
+    left:auto;
     z-index: -1; 
     width: 1050px;
 }
