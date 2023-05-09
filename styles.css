@@ -508,6 +508,7 @@ no resume button for now
 .project-image {
     position:relative;
     width: 100%;
+    height: 100%;
     border-radius: 22px 22px 0 0;
 }
 
@@ -771,9 +772,7 @@ footer p {
     }
 /* WELCOME */
 
-    #projects-grid-container {
-        grid-template-columns: 1fr;
-    }
+
     #about-section {
         height: 600px;
         margin-top: 60px;
