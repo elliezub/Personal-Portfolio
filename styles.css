@@ -476,11 +476,11 @@ no resume button for now
 }
 
 #projects-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    max-width:900px;
-    grid-gap: 2rem;
-    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
    
 }
 
@@ -491,8 +491,10 @@ no resume button for now
     align-items: center;
     background-color: var(--medpurple);
     padding:0 0 20px 0;
+    margin: 20px;
     border-radius: 30px 30px 22px 22px;
-    min-width: 200px;
+    max-width: 350px;
+    min-width: 250px;
     text-decoration: none;
     color: white;
     transition: 0.3s ease-in-out;
@@ -505,7 +507,6 @@ no resume button for now
 
 .project-image {
     position:relative;
-    height: calc(100%-6.8rem);
     width: 100%;
     border-radius: 22px 22px 0 0;
 }
