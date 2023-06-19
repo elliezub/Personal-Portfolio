@@ -432,8 +432,9 @@ ul {
     border:none;
 }
 
-#resume-a {
+.resumea {
     text-decoration: none;
+    color: white;
 }
 
 #resumebutton:hover {
