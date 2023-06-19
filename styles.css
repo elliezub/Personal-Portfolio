@@ -349,7 +349,7 @@ ul {
   justify-content: center;
   margin-top: 100px;
   margin-bottom: 15px;
-  height: 70px;
+  min-height: 70px;
 }
 
 #about-section hr {
@@ -568,6 +568,7 @@ form {
   border-radius: 15px;
   border: none;
   caret-color: var(--medpurple);
+  background-color: white;
 }
 
 textarea {
@@ -749,7 +750,7 @@ footer p {
   /* WELCOME */
 
   #about-section {
-    height: 600px;
+    height: 700px;
     margin-top: 60px;
   }
 
@@ -815,7 +816,7 @@ footer p {
   }
 
   #about-section {
-    height: 700px;
+    height: 850px;
     margin-top: 0;
   }
 
@@ -837,7 +838,7 @@ footer p {
   }
 
   #about-section {
-    height: 700px;
+    height: 870px;
   }
 
   #profilepicmobile {
@@ -849,7 +850,7 @@ footer p {
 
 @media (max-width: 310px) {
   #about-section {
-    height: 870px;
+    height: 1100px;
   }
 }
 
