@@ -420,12 +420,13 @@ ul {
 
 #resumebutton {
     text-align: center;
-    margin: 50px auto 0 auto;
+    margin: 70px auto 0 auto;
     background-color: var(--medpurple);
     width: 5.9rem;
     padding: 13px;
     border-radius: 30px;
     color: white;
+    font-size: 1rem;
     transition: 0.3s ease-in-out;
     cursor:pointer;
     border:none;
@@ -449,7 +450,6 @@ ul {
   flex-direction: column;
   align-items: center;
   margin: 10px auto;
-  /* figure out how to get the sticky not to touch the container */
 }
 
 #project-section h2 {
@@ -655,7 +655,7 @@ footer p {
 
 @media (max-width: 1000px) {
   #intro {
-    left: 275px;
+    left: 240px;
   }
   #welcome-section h1 {
     font-size: 3rem;
@@ -666,6 +666,20 @@ footer p {
   #leftblob {
     display: none;
   }
+
+  #about-section, #project-section, #contact-section {
+    height: auto;
+  }
+  #contact-section {
+    margin-bottom: 200px;
+    margin-top:100px;
+  }
+}
+
+@media (max-width: 850px) {
+    #intro {
+        left: 290px;
+    }
 }
 
 @media (max-width: 712px) {
@@ -726,7 +740,7 @@ footer p {
     align-items: center;
     margin-top: 150px;
     margin-bottom: 30px;
-    height: 600px;
+ 
   }
   #intro {
     align-items: center;
@@ -750,7 +764,7 @@ footer p {
   /* WELCOME */
 
   #about-section {
-    height: 700px;
+
     margin-top: 60px;
   }
 
@@ -784,11 +798,7 @@ footer p {
   }
 
   #contact-section h2 {
-    margin: 125px auto 30px auto;
-  }
-
-  #contact-section {
-    margin-bottom: 200px;
+    margin: auto auto 30px auto;
   }
 
   p {
@@ -798,9 +808,14 @@ footer p {
   h2 {
     font-size: 1.7em;
   }
-  #contact-section {
-    height: 600px;
-  }
+
+}
+
+@media (max-width: 650px) {
+    #h2intro {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 500px) {
@@ -815,47 +830,24 @@ footer p {
     display: none;
   }
 
-  #about-section {
-    height: 850px;
-    margin-top: 0;
-  }
-
-  #welcome-section {
-    height: 600px;
-  }
-
   #profilepicmobile {
     margin: 20px 20px 30px 0;
     width: 120vw;
-    left: -75px;
+    left: -65px;
+  }
+  #contact-section {
+    margin-bottom: 150px;
   }
 }
 
 @media (max-width: 412px) {
-  #welcome-section {
-    height: 700px;
-    margin-top: 110px;
-  }
-
-  #about-section {
-    height: 870px;
-  }
-
+ 
   #profilepicmobile {
     margin: 0 0 30px 0;
     width: 160vw;
-    left: -90px;
+    left: -80px;
   }
-}
-
-@media (max-width: 310px) {
-  #about-section {
-    height: 1100px;
-  }
-}
-
-@media (max-width: 250px) {
-  #about-section {
-    height: 950px;
+  #contact-section {
+    margin-bottom: 100px;
   }
 }
