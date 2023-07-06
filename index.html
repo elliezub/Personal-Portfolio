@@ -70,14 +70,14 @@
 <!-- TOGGLE -->
 <!-- reference: This codepen helped me figure out how to do dark/light mode toggle!
      https://codepen.io/Umer_Farooq/pen/eYJgKGN -->
-    <div id="jstoggle">
-        <input type="checkbox" class="toggle" id="toggle">
-        <label for="toggle" class="toggle-label">
-            <i class="fa-regular fa-moon fa-lg" style="color: #f6fffb;"></i>
-            <i class="fa-regular fa-sun fa-lg" style="color: #f6fffb;"></i>
-            <span class="switch"></span>
-        </label>
-    </div>
+<div id="jstoggle">
+    <input type="checkbox" class="toggle" id="toggle" aria-label="Toggle dark and light mode">
+    <label for="toggle" class="toggle-label">
+        <i class="fa-regular fa-moon fa-lg" aria-hidden="true" style="color: #f6fffb;"></i>
+        <i class="fa-regular fa-sun fa-lg" aria-hidden="true" style="color: #f6fffb;"></i>
+        <span class="switch"></span>
+    </label>
+</div>
     <main>
         <!-- START WELCOME SECTION -->
         <img src="https://i.ibb.co/RY7TBJF/bitmapleftblobs.png" alt="purple blob" id="leftblob">
@@ -93,13 +93,13 @@
             <a class="email-link intro-item" href="mailto:ellieslife@icloud.com" 
             rel="noopener noreferrer" target="_blank">Say Hi 👋</a>
             <div id="bot-icons">
-                <a href="https://github.com/elliezub" target="_blank">
+                <a href="https://github.com/elliezub" target="_blank" aria-label="Check out ellie zubrowski on github @elliezub" >
                     <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/elliezubrowski" target="_blank">
+                <a href="https://www.linkedin.com/in/elliezubrowski" target="_blank" aria-label="Check out ellie zubrowski on linkedin" >
                     <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i>
                 </a>
-                <a href="https://twitter.com/elliezub" target="_blank">
+                <a href="https://twitter.com/elliezub" target="_blank" aria-label="Check out ellie zubrowski on twitter @elliezub" >
                     <i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i>
                 </a>
             </div> 
@@ -183,8 +183,8 @@
                     </p>
                 </a>     
             </div>
-            <!-- decide see more href -->
-            <a href="https://codepen.io/elliezub" id="seemore-button" target="_blank">
+            
+            <a href="https://codepen.io/elliezub" id="seemore-button" target="_blank" aria-label="See more on my CodePen profile, opens in a new tab">
                 See more
             </a>
         </section>
