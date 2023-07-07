@@ -278,6 +278,7 @@ ul {
   flex-direction: column;
   margin-left: 100px;
   min-width: 470px;
+  /* overflow-x: hidden; */
 }
 
 #welcome-section h1 {
@@ -326,6 +327,7 @@ ul {
   width: 90vw;
   max-width: 900px;
   min-width: 800px;
+  /* overflow-x: hidden; */
 }
 
 #profilepicmobile {
@@ -849,7 +851,7 @@ footer p {
  
   #profilepicmobile {
     margin: 0 0 30px 0;
-    width: 160vw;
+    width: 560px;
     left: -80px;
   }
   #contact-section {
