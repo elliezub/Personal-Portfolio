@@ -57,6 +57,8 @@ a {
 
 body {
   background-color: white;
+  width:100%;
+  overflow-x: hidden;
 }
 
 /* TOGGLE */
@@ -651,6 +653,8 @@ footer p {
 #bot-icons a {
   padding: 5px;
 }
+
+
 
 /*  @media */
 
