@@ -250,7 +250,7 @@ ul {
 #welcome-section {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 90vh;
   margin: 55px auto 0 auto;
@@ -659,16 +659,40 @@ footer p {
 
 
 /*  @media */
+@media (max-width: 1200px) {
+  #intro {
+    left: 192px;
+  }
+  #profilepic {
+    left:-30px;
+  }
+}
+
+@media (max-width: 1150px) {
+  #intro {
+    left: 260px;
+  }
+}
+
+@media (max-width: 1085px) {
+  #intro {
+    left: 300px;
+  }
+  #profilepic {
+    left:-13px;
+  }
+}
+
 
 @media (max-width: 1000px) {
   #intro {
-    left: 240px;
+    left: 370px;
   }
   #welcome-section h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   #profilepic {
-    left: -190px;
+    left:-13px;
   }
   #leftblob {
     display: none;
@@ -683,15 +707,62 @@ footer p {
   }
 }
 
-@media (max-width: 850px) {
-    #intro {
-        left: 290px;
-    }
+@media (max-width: 970px) {
+ #profilepic {
+  min-width: 700px;
+ }
+ #intro {
+  left: 320px;
+ }
+}
+
+@media (max-width: 910px) {
+#intro {
+  left: 350px;
+}
+}
+
+@media (max-width: 890px) {
+  #welcome-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+ 
+  }
+  #intro {
+    align-items: center;
+    text-align: center;
+    margin: 25px 15px;
+    min-width: 180px;
+    position: static;
+  }
+
+  #profilepic {
+    display: none;
+  }
+
+  #profilepicmobile {
+    display: block;
+    position: relative;
+    margin: 35px 0 20px 0;
+    width: 95vw;
+    left: -60px;
+  }
 }
 
 @media (max-width: 712px) {
   #leftblob {
     display: none;
+  }
+  #welcome-section h1 {
+    font-size: 3rem;
+  }
+  #profilepicmobile {
+    margin-top: 0px;
+    width: 110vw;
+    left:-70px;
   }
   /* HAMBURGER */
   .hamburger {
@@ -741,38 +812,12 @@ footer p {
   /* HAMBURGER END */
 
   /* WELCOME */
-  #welcome-section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-    margin-bottom: 30px;
- 
-  }
-  #intro {
-    align-items: center;
-    text-align: center;
-    margin: 25px 15px;
-    width: auto;
-    position: static;
-  }
 
-  #profilepic {
-    display: none;
-  }
-
-  #profilepicmobile {
-    display: block;
-    position: relative;
-    margin: 40px 0 20px 0;
-    width: 95vw;
-    left: -60px;
-  }
   /* WELCOME */
 
   #about-section {
 
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
   #about-section h2 {
@@ -851,8 +896,8 @@ footer p {
  
   #profilepicmobile {
     margin: 0 0 30px 0;
-    width: 560px;
-    left: -80px;
+    width: 140vw;
+    left: -75px;
   }
   #contact-section {
     margin-bottom: 100px;
