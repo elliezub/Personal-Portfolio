@@ -57,7 +57,7 @@ a {
 
 body {
   background-color: white;
-  width:100%;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -314,7 +314,6 @@ ul {
     0 3px 12px 0 rgba(87, 13, 250, 0.19);
 }
 
-
 .email-link:hover {
   background-color: var(--darkpurple);
 }
@@ -421,30 +420,28 @@ ul {
   }
 }
 
-
 #resumebutton {
-    text-align: center;
-    margin: 70px auto 0 auto;
-    background-color: var(--medpurple);
-    width: 5.9rem;
-    padding: 13px;
-    border-radius: 30px;
-    color: white;
-    font-size: 1rem;
-    transition: 0.3s ease-in-out;
-    cursor:pointer;
-    border:none;
+  text-align: center;
+  margin: 70px auto 0 auto;
+  background-color: var(--medpurple);
+  width: 5.9rem;
+  padding: 13px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
 }
 
 .resumea {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 #resumebutton:hover {
-    background-color: var(--darkpurple); 
+  background-color: var(--darkpurple);
 }
-
 
 /* END ABOUT */
 
@@ -656,15 +653,13 @@ footer p {
   padding: 5px;
 }
 
-
-
 /*  @media */
 @media (max-width: 1200px) {
   #intro {
     left: 192px;
   }
   #profilepic {
-    left:-30px;
+    left: -30px;
   }
 }
 
@@ -679,10 +674,9 @@ footer p {
     left: 300px;
   }
   #profilepic {
-    left:-13px;
+    left: -13px;
   }
 }
-
 
 @media (max-width: 1000px) {
   #intro {
@@ -692,34 +686,36 @@ footer p {
     font-size: 3.5rem;
   }
   #profilepic {
-    left:-13px;
+    left: -13px;
   }
   #leftblob {
     display: none;
   }
 
-  #about-section, #project-section, #contact-section {
+  #about-section,
+  #project-section,
+  #contact-section {
     height: auto;
   }
   #contact-section {
     margin-bottom: 200px;
-    margin-top:100px;
+    margin-top: 100px;
   }
 }
 
 @media (max-width: 970px) {
- #profilepic {
-  min-width: 700px;
- }
- #intro {
-  left: 320px;
- }
+  #profilepic {
+    min-width: 700px;
+  }
+  #intro {
+    left: 320px;
+  }
 }
 
 @media (max-width: 910px) {
-#intro {
-  left: 350px;
-}
+  #intro {
+    left: 350px;
+  }
 }
 
 @media (max-width: 890px) {
@@ -729,7 +725,6 @@ footer p {
     align-items: center;
     margin-top: 150px;
     margin-bottom: 30px;
- 
   }
   #intro {
     align-items: center;
@@ -762,11 +757,12 @@ footer p {
   #profilepicmobile {
     margin-top: 0px;
     width: 110vw;
-    left:-70px;
+    left: -70px;
   }
   /* HAMBURGER */
   .hamburger {
     display: block;
+    margin-right: 7px;
   }
 
   #jstoggle {
@@ -816,12 +812,11 @@ footer p {
   /* WELCOME */
 
   #about-section {
-
     margin-top: 30px;
   }
 
   #about-section h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   #about-container {
     display: flex;
@@ -860,14 +855,13 @@ footer p {
   h2 {
     font-size: 1.7em;
   }
-
 }
 
 @media (max-width: 650px) {
-    #h2intro {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  #h2intro {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 500px) {
@@ -893,7 +887,6 @@ footer p {
 }
 
 @media (max-width: 412px) {
- 
   #profilepicmobile {
     margin: 0 0 30px 0;
     width: 140vw;
@@ -905,9 +898,7 @@ footer p {
 }
 
 @media (max-width: 380px) {
- 
   #profilepicmobile {
     margin-top: 50px;
   }
-
 }
