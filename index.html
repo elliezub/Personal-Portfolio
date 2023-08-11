@@ -1,227 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Ellie Zubrowski, a front-end developer who loves cats and playing League of Legends.">
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/hyfJ4j2/Untitled-Artwork-4.png">
-    <link rel="apple-touch-icon" href="https://i.ibb.co/hyfJ4j2/Untitled-Artwork-4.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Ellie Zubrowski, a front-end developer who loves cats and playing League of Legends."
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.ibb.co/hyfJ4j2/Untitled-Artwork-4.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://i.ibb.co/hyfJ4j2/Untitled-Artwork-4.png"
+    />
     <title>Ellie Zubrowski | Front-end Developer</title>
-    <script src="https://kit.fontawesome.com/e5f441b479.js" 
-    crossorigin="anonymous"></script>
-</head>
-<body>
-
-
+    <script
+      src="https://kit.fontawesome.com/e5f441b479.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- START NAV -->
-<header>
-    <!-- START LOGO AND NAME -->
-    <nav id="navbar">
+    <header>
+      <!-- START LOGO AND NAME -->
+      <nav id="navbar">
         <div id="leftnav">
-        <!-- insert logo - cute cat here -->
-        <img src="https://i.ibb.co/hyfJ4j2/Untitled-Artwork-4.png" alt="Ellie Zubrowski's cute cat logo" id="cat">
-        <a href="#welcome-section" id="header-myname">
+          <!-- insert logo - cute cat here -->
+          <img
+            src="https://i.ibb.co/hyfJ4j2/Untitled-Artwork-4.png"
+            alt="Ellie Zubrowski's cute cat logo"
+            id="cat"
+          />
+          <a href="#welcome-section" id="header-myname">
             <span>Ellie Zubrowski</span>
-        </a>
+          </a>
         </div>
         <!-- END LOGO AND NAME -->
 
         <!-- START NAV LIST -->
         <ul id="nav-list" class="nav-items">
-            <li class="nav-item">
-                <a href="#top" class="nav-link">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a href="#about-section" class="nav-link">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a href="#project-section" class="nav-link">PROJECTS</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact-section" class="nav-link">CONTACT</a>
-            </li>
+          <li class="nav-item">
+            <a href="#top" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-section" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="#project-section" class="nav-link">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-section" class="nav-link">CONTACT</a>
+          </li>
         </ul>
         <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-         <!-- reference: this vid helped me figure out how to make the hamburger menu!!
+        <!-- reference: this vid helped me figure out how to make the hamburger menu!!
              https://www.youtube.com/watch?v=flItyHiDm7E -->
         <!-- END NAV LIST -->
-    </nav>
-</header>
+      </nav>
+    </header>
     <!-- END NAV -->
-<div id="sticky-sidebar">
-    <a href="https://github.com/elliezub" target="_blank" rel="noopener noreferrer" aria-label="Ellie Zubrowski's GitHub profile">
+    <div id="sticky-sidebar">
+      <a
+        href="https://github.com/elliezub"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ellie Zubrowski's GitHub profile"
+      >
         <i id="github" class="fa-brands fa-github fa-xl"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/elliezubrowski" target="_blank" rel="noopener noreferrer" aria-label="Ellie Zubrowski's LinkedIn profile">
+      </a>
+      <a
+        href="https://www.linkedin.com/in/elliezubrowski"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ellie Zubrowski's LinkedIn profile"
+      >
         <i class="fa-brands fa-linkedin fa-xl"></i>
-    </a>
-    <a href="https://twitter.com/elliezub" target="_blank" rel="noopener noreferrer" aria-label="Ellie Zubrowski's Twitter profile, aka elliezub">
+      </a>
+      <a
+        href="https://twitter.com/elliezub"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ellie Zubrowski's Twitter profile, aka elliezub"
+      >
         <i class="fa-brands fa-twitter fa-xl"></i>
-    </a>
-</div>
+      </a>
+    </div>
     <div id="top">hi</div>
 
-<!-- TOGGLE -->
-<!-- reference: This codepen helped me figure out how to do dark/light mode toggle!
+    <!-- TOGGLE -->
+    <!-- reference: This codepen helped me figure out how to do dark/light mode toggle!
      https://codepen.io/Umer_Farooq/pen/eYJgKGN -->
-<div id="jstoggle">
-    <input type="checkbox" class="toggle" id="toggle" aria-label="Toggle dark and light mode">
-    <label for="toggle" class="toggle-label">
-        <i class="fa-regular fa-moon fa-lg" aria-hidden="true" style="color: #f6fffb;"></i>
-        <i class="fa-regular fa-sun fa-lg" aria-hidden="true" style="color: #f6fffb;"></i>
+    <div id="jstoggle">
+      <input
+        type="checkbox"
+        class="toggle"
+        id="toggle"
+        aria-label="Toggle dark and light mode"
+      />
+      <label for="toggle" class="toggle-label">
+        <i
+          class="fa-regular fa-moon fa-lg"
+          aria-hidden="true"
+          style="color: #f6fffb"
+        ></i>
+        <i
+          class="fa-regular fa-sun fa-lg"
+          aria-hidden="true"
+          style="color: #f6fffb"
+        ></i>
         <span class="switch"></span>
-    </label>
-</div>
+      </label>
+    </div>
     <main>
-        <!-- START WELCOME SECTION -->
-        <img src="https://i.ibb.co/RY7TBJF/bitmapleftblobs.png" alt="purple blob" id="leftblob">
-        <section id="welcome-section">
-               
-            <img src="https://i.ibb.co/QdKcX2R/firstprofileimg.png" 
-            alt="Profile image of elliezub / Ellie Zubrowski" id="profilepic">
-            <img src="https://i.ibb.co/9VqkCyD/secondprofileimg.png" alt="Profile image of elliezub / Ellie Zubrowski" id="profilepicmobile">
-            <div id="intro">
-            <div id="hello-wrapper"><h1 class="intro-item" id="hello">HELLO WORLD</h1></div>
-            <h2 class="intro-item" id="h2intro">I'm Ellie, a front-end developer</h2>
-            <p class="intro-item" id="ilovecats">I love coding & cats</p>
-            <a class="email-link intro-item" href="mailto:ellieslife@icloud.com" 
-            rel="noopener noreferrer" target="_blank">Say Hi 👋</a>
-            <div id="bot-icons">
-                <a href="https://github.com/elliezub" target="_blank" aria-label="Check out ellie zubrowski on github @elliezub" >
-                    <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/elliezubrowski" target="_blank" aria-label="Check out ellie zubrowski on linkedin" >
-                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i>
-                </a>
-                <a href="https://twitter.com/elliezub" target="_blank" aria-label="Check out ellie zubrowski on twitter @elliezub" >
-                    <i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i>
-                </a>
-            </div> 
-            </div>
-        </section>
-        <!-- <img src="https://i.ibb.co/RY7TBJF/bitmapleftblobs.png" alt="purple blob on elliezub portfolio site" id="leftblob"> -->
-        <!-- END WELCOME SECTION -->
+      <!-- START WELCOME SECTION -->
+      <img
+        src="https://i.ibb.co/RY7TBJF/bitmapleftblobs.png"
+        alt="purple blob"
+        id="leftblob"
+      />
+      <section id="welcome-section">
+        <img
+          src="https://i.ibb.co/QdKcX2R/firstprofileimg.png"
+          alt="Profile image of elliezub / Ellie Zubrowski"
+          id="profilepic"
+        />
+        <img
+          src="https://i.ibb.co/9VqkCyD/secondprofileimg.png"
+          alt="Profile image of elliezub / Ellie Zubrowski"
+          id="profilepicmobile"
+        />
+        <div id="intro">
+          <div id="hello-wrapper">
+            <h1 class="intro-item" id="hello">HELLO WORLD</h1>
+          </div>
+          <h2 class="intro-item" id="h2intro">
+            I'm Ellie, a front-end developer
+          </h2>
+          <p class="intro-item" id="ilovecats">I love coding & cats</p>
+          <a
+            class="email-link intro-item"
+            href="mailto:ellieslife@icloud.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Say Hi 👋</a
+          >
+          <div id="bot-icons">
+            <a
+              href="https://github.com/elliezub"
+              target="_blank"
+              aria-label="Check out ellie zubrowski on github @elliezub"
+            >
+              <i class="fa-brands fa-github fa-2xl" style="color: #000000"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/elliezubrowski"
+              target="_blank"
+              aria-label="Check out ellie zubrowski on linkedin"
+            >
+              <i
+                class="fa-brands fa-linkedin fa-2xl"
+                style="color: #000000"
+              ></i>
+            </a>
+            <a
+              href="https://twitter.com/elliezub"
+              target="_blank"
+              aria-label="Check out ellie zubrowski on twitter @elliezub"
+            >
+              <i class="fa-brands fa-twitter fa-2xl" style="color: #000000"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- <img src="https://i.ibb.co/RY7TBJF/bitmapleftblobs.png" alt="purple blob on elliezub portfolio site" id="leftblob"> -->
+      <!-- END WELCOME SECTION -->
 
-        <!-- START ABOUT SECTION-->
-        <section id="about-section">
-            <h2>ABOUT ME</h2>
-            <hr>
-            <div id="about-container">
-                <div id="about-content">
-                    <h3>Who am I?</h3>
-                    <p>Hi! I'm Ellie, a front-end developer with a passion for creating beautiful and functional websites. 
-                        I have a strong foundation in HTML and CSS, and am currently learning JavaScript.</p>
-                        <br>
-                        <!-- <p>With a background in teaching English in Taiwan, 
+      <!-- START ABOUT SECTION-->
+      <section id="about-section">
+        <h2>ABOUT ME</h2>
+        <hr />
+        <div id="about-container">
+          <div id="about-content">
+            <h3>Who am I?</h3>
+            <p>
+              Hi! I'm Ellie, a front-end developer with a passion for creating
+              beautiful and functional websites. I have a strong foundation in
+              HTML and CSS, and am currently learning JavaScript.
+            </p>
+            <br />
+            <!-- <p>With a background in teaching English in Taiwan, 
                         studying International Business and working in the interior design industry, 
                         I have acquired a unique perspective on problem-solving and design. -->
-                        <p>When I'm not coding I'm usually  
-                    playing League of Legends or spending time with friends 😊</p>
-                            <br>
-                        <p>Feel free to <a class="get-in-touch" href="mailto:ellieslife@icloud.com" 
-                            rel="noopener noreferrer" target="_blank">email</a> me if you have any questions or just want to chat!</p>
-                        <!-- BUTTON ?? RESUME OR CONTACT -->
-                </div>
-                <div id="skill-container">
-                    <h3>My Skills</h3>
-                <div id="skills">
-                    <div>JavaScript</div>
-                    <div>HTML5</div>
-                    <div>CSS3</div>
-                    <div>TailwindCSS</div>
-                    <div>Bootstrap</div>
-                    <div>Basic SQL</div>
-                    <div>Github</div>
-                    <div>Procreate</div>
-                    <div>InkScape</div>
-                </div>
-                </div>
-            </div>
-            <button id="resumebutton" class="resumebutton"><a href="https://drive.google.com/file/d/1AqO7OvZtmZaqUaV6DCMCxsTep1OcCLaj/view?usp=sharing" target="_blank" class="resumea">Resumé</a></button>
-        </section>
-        <!-- END ABOUT SECTION -->
-
-        <!-- START PROJECT SECTION -->
-        <section id="project-section">
-            <h2>PROJECTS</h2>
-            <hr>
-            <div id="projects-grid-container">
-                <a href="https://elliezub.github.io/Free-Coding-Resources/" class="project-bg" target="_blank">
-                    <img class="project-image" src="https://i.ibb.co/2M6JMVg/elliezub-github-io-Free-Coding-Resources-1.png" alt="coding resources project made by Ellie Zubrowski">
-                    <p class="project-title">Free Coding Resources
-                    </p>
-                </a>  
-                <a href="https://elliezub.github.io/Designer-Website/" class="project-bg" target="_blank">
-                    <img class="project-image" src="https://i.ibb.co/FxkxMRc/elliezub-github-io-Designer-Website-lookbook-html-5.jpg" alt="Interior designer website designed and built by Ellie Zubrowski">
-                    <p class="project-title">Interior Design Website
-                    </p>
-                </a>
-                <a href="https://elliezub.github.io/league-of-legends-survey/" class="project-bg" target="_blank">
-                    <img class="project-image" src="https://i.ibb.co/CKfg2pR/elliezub-github-io-league-of-legends-survey.jpg" alt="Survey form for league of legends players made by elliezub / ellie zubrowski">
-                    <p class="project-title">League Survey Form
-                    </p>
-                </a>  
-                <a href="https://elliezub.github.io/Advanced_Chinese/" class="project-bg" target="_blank">
-                    <img class="project-image" src="https://i.ibb.co/84DfwMq/advchinesegrammar4to3.jpg" alt="Webpage explaining chinese grammar points made by elliezub / ellie zubrowski">
-                    <p class="project-title">Chinese Grammar Webpage
-                    </p>
-                </a>   
-                <a href="https://elliezub.github.io/Random-Password-Generator/" class="project-bg" target="_blank">
-                    <img class="project-image" src="https://i.ibb.co/6tJvmMj/generatorcss101.png" alt="Image of random password generator made by elliezub / ellie zubrowski">
-                    <p class="project-title">Password Generator
-                    </p>
-                </a>  
-                <a href="https://elliezub.github.io/Unit-conversion/" class="project-bg" target="_blank">
-                    <img class="project-image" src="https://i.ibb.co/nDZ2tfZ/elliezub-github-io-Unit-conversion-2-101.jpg" alt="Unit converter project made by elliezub / ellie zubrowski">
-                    <p class="project-title">Unit Converter
-                    </p>
-                </a>     
-            </div>
-            
-            <a href="https://codepen.io/elliezub" id="seemore-button" target="_blank" aria-label="See more on my CodePen profile, opens in a new tab">
-                See more
-            </a>
-        </section>
-        <!-- END PROJECT SECTION -->
-        <!-- START CONTACT SECTION -->
-        <section id="contact-section">
-            <h2>CONTACT</h2>
-            <hr>
-            <p>Feel free to reach out if you have any questions, if you'd like to 
-                discuss potential opportunities or even if you just want to be friends, I'd love to chat with you!</p>
-            <div id="email-form-container">
-                <form action="https://formspree.io/f/mayzavzb" id="form" method="POST">
-                        <input class="input-item" type="name" name="name" placeholder="Name" id="name-input" required>
-                        <input class="input-item" type="email" name="email" placeholder="Email" required>
-                        <textarea class="input-item" name="message" id="" cols="50" rows="12" placeholder="Message" required></textarea>
-                        <input type="submit" value="Submit" id="submit-button">
-                </form>
-                </div>
-        </section>
-        
-        <!-- END CONTACT SECTION -->
-        <footer>
-            <div id="footer-items">
-            <div class="custom-shape-divider-top-1682552844">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-            
-          <p id="footer-text">Designed & built by Ellie Zubrowski <br> Profile image artwork by <a target="_blank" 
-            href="https://www.instagram.com/sus_peck/">
-            sus_peck</a></p>
-            <br>
-            <p>Email: ellieslife@icloud.com</p>
+            <p>
+              When I'm not coding I'm usually playing League of Legends or
+              spending time with friends 😊
+            </p>
+            <br />
+            <p>
+              Feel free to
+              <a
+                class="get-in-touch"
+                href="mailto:ellieslife@icloud.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                >email</a
+              >
+              me if you have any questions or just want to chat!
+            </p>
+            <!-- BUTTON ?? RESUME OR CONTACT -->
           </div>
-        </footer>
+          <div id="skill-container">
+            <h3>My Skills</h3>
+            <div id="skills">
+              <div>JavaScript</div>
+              <div>React</div>
+              <div>HTML5</div>
+              <div>CSS3</div>
+              <div>TailwindCSS</div>
+              <div>Bootstrap</div>
+              <div>Vite.js</div>
+              <div>Github</div>
+              <div>InkScape</div>
+            </div>
+          </div>
+        </div>
+        <button id="resumebutton" class="resumebutton">
+          <a
+            href="https://drive.google.com/file/d/1AqO7OvZtmZaqUaV6DCMCxsTep1OcCLaj/view?usp=sharing"
+            target="_blank"
+            class="resumea"
+            >Resumé</a
+          >
+        </button>
+      </section>
+      <!-- END ABOUT SECTION -->
+
+      <!-- START PROJECT SECTION -->
+      <section id="project-section">
+        <h2>PROJECTS</h2>
+        <hr />
+        <div id="projects-grid-container">
+          <a
+            href="https://elliezub.github.io/Free-Coding-Resources/"
+            class="project-bg"
+            target="_blank"
+          >
+            <img
+              class="project-image"
+              src="https://i.ibb.co/2M6JMVg/elliezub-github-io-Free-Coding-Resources-1.png"
+              alt="coding resources project made by Ellie Zubrowski"
+            />
+            <p class="project-title">Free Coding Resources</p>
+          </a>
+          <a
+            href="https://elliezub.github.io/Designer-Website/"
+            class="project-bg"
+            target="_blank"
+          >
+            <img
+              class="project-image"
+              src="https://i.ibb.co/FxkxMRc/elliezub-github-io-Designer-Website-lookbook-html-5.jpg"
+              alt="Interior designer website designed and built by Ellie Zubrowski"
+            />
+            <p class="project-title">Interior Design Website</p>
+          </a>
+          <a
+            href="https://elliezub.github.io/league-of-legends-survey/"
+            class="project-bg"
+            target="_blank"
+          >
+            <img
+              class="project-image"
+              src="https://i.ibb.co/CKfg2pR/elliezub-github-io-league-of-legends-survey.jpg"
+              alt="Survey form for league of legends players made by elliezub / ellie zubrowski"
+            />
+            <p class="project-title">League Survey Form</p>
+          </a>
+          <a
+            href="https://elliezub.github.io/Advanced_Chinese/"
+            class="project-bg"
+            target="_blank"
+          >
+            <img
+              class="project-image"
+              src="https://i.ibb.co/84DfwMq/advchinesegrammar4to3.jpg"
+              alt="Webpage explaining chinese grammar points made by elliezub / ellie zubrowski"
+            />
+            <p class="project-title">Chinese Grammar Webpage</p>
+          </a>
+          <a
+            href="https://elliezub.github.io/Random-Password-Generator/"
+            class="project-bg"
+            target="_blank"
+          >
+            <img
+              class="project-image"
+              src="https://i.ibb.co/6tJvmMj/generatorcss101.png"
+              alt="Image of random password generator made by elliezub / ellie zubrowski"
+            />
+            <p class="project-title">Password Generator</p>
+          </a>
+          <a
+            href="https://elliezub.github.io/Unit-conversion/"
+            class="project-bg"
+            target="_blank"
+          >
+            <img
+              class="project-image"
+              src="https://i.ibb.co/nDZ2tfZ/elliezub-github-io-Unit-conversion-2-101.jpg"
+              alt="Unit converter project made by elliezub / ellie zubrowski"
+            />
+            <p class="project-title">Unit Converter</p>
+          </a>
+        </div>
+
+        <a
+          href="https://codepen.io/elliezub"
+          id="seemore-button"
+          target="_blank"
+          aria-label="See more on my CodePen profile, opens in a new tab"
+        >
+          See more
+        </a>
+      </section>
+      <!-- END PROJECT SECTION -->
+      <!-- START CONTACT SECTION -->
+      <section id="contact-section">
+        <h2>CONTACT</h2>
+        <hr />
+        <p>
+          Feel free to reach out if you have any questions, if you'd like to
+          discuss potential opportunities or even if you just want to be
+          friends, I'd love to chat with you!
+        </p>
+        <div id="email-form-container">
+          <form
+            action="https://formspree.io/f/mayzavzb"
+            id="form"
+            method="POST"
+          >
+            <input
+              class="input-item"
+              type="name"
+              name="name"
+              placeholder="Name"
+              id="name-input"
+              required
+            />
+            <input
+              class="input-item"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="input-item"
+              name="message"
+              id=""
+              cols="50"
+              rows="12"
+              placeholder="Message"
+              required
+            ></textarea>
+            <input type="submit" value="Submit" id="submit-button" />
+          </form>
+        </div>
+      </section>
+
+      <!-- END CONTACT SECTION -->
+      <footer>
+        <div id="footer-items">
+          <div class="custom-shape-divider-top-1682552844">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+
+          <p id="footer-text">
+            Designed & built by Ellie Zubrowski | Profile image artwork by
+            <a target="_blank" href="https://www.instagram.com/sus_peck/">
+              sus_peck</a
+            >
+          </p>
+          <br />
+          <p>
+            Email:
+            <a href="mailto:ellieslife@icloud.com">ellieslife@icloud.com</a>
+          </p>
+        </div>
+      </footer>
     </main>
-  <script src="script.js"></script>  
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
