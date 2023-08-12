@@ -633,6 +633,10 @@ textarea {
   padding-bottom: 15px;
 }
 
+#my-form-status {
+  padding-top: 30px;
+}
+
 footer {
   text-align: center;
 }
