@@ -2,7 +2,7 @@
 /* maybe change the project section background */
 /* contact txt size too small  */
 
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=League+Spartan:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=League+Spartan:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap');
 
 @media (prefers-reduced-motion: no-preference) {
   * {
@@ -25,7 +25,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   box-sizing: border-box;
 
   /* font-family:INSERT FONT FAMILY; */
@@ -547,7 +547,16 @@ ul {
   margin: 0 20px;
 }
 
+#contact-section-form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #email-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--lightpurple);
   padding: 7px 15px 20px 15px;
   margin-top: 45px;
