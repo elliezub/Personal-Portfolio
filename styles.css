@@ -547,12 +547,6 @@ ul {
   margin: 0 20px;
 }
 
-#contact-section-form-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #email-form-container {
   display: flex;
   align-items: center;
