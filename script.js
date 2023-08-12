@@ -36,7 +36,6 @@ async function handleSubmit(event) {
       if (response.ok) {
         status.innerHTML = 'Thanks for your submission!'
         form.reset()
-        formContainer.style.display = 'none' // This hides the form
       } else {
         response.json().then((data) => {
           if (Object.hasOwn(data, 'errors')) {
