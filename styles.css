@@ -341,7 +341,7 @@ ul {
   flex-direction: column;
   max-width: 120rem;
   margin: 10px auto 10px auto;
-  height: 90vh;
+  min-height: 90vh;
   /* edit height or delete maybe */
   /* edit width of all sections! */
 }
@@ -394,7 +394,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2.4rem;
+  min-height: 2.4rem;
   width: 5.9rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -699,12 +699,11 @@ footer p {
   #about-section,
   #project-section,
   #contact-section {
-    height: auto;
+    min-height: auto;
   }
   #contact-section {
     margin-bottom: 200px;
     margin-top: 100px;
-    min-height: auto;
   }
 }
 
@@ -728,8 +727,9 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 70px;
     margin-bottom: 30px;
+    height:auto;
   }
   #intro {
     align-items: center;
