@@ -252,7 +252,7 @@ ul {
   flex-direction: row-reverse;
   /* justify-content: center; */
   align-items: center;
-  height: 90vh;
+  height: 95vh;
   margin: 55px auto 0 auto;
   max-width: 1500px;
 }
@@ -528,13 +528,13 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 780px;
+  min-height: 780px;
   top: 0;
-  margin: 0px auto;
+  margin: 20px auto;
 }
 
 #contact-section h2 {
-  margin: 0px auto 40px auto;
+  margin: 90px auto 40px auto;
 }
 
 #contact-section hr {
@@ -704,6 +704,7 @@ footer p {
   #contact-section {
     margin-bottom: 200px;
     margin-top: 100px;
+    min-height: auto;
   }
 }
 
@@ -849,7 +850,7 @@ footer p {
   }
 
   #contact-section h2 {
-    margin: auto auto 30px auto;
+    margin: 20px auto 30px auto;
   }
 
   p {
