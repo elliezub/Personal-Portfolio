@@ -675,7 +675,7 @@ footer p {
 
 @media (max-width: 1085px) {
   #intro {
-    left: 300px;
+    left: 320px;
   }
   #profilepic {
     left: -13px;
@@ -684,7 +684,7 @@ footer p {
 
 @media (max-width: 1000px) {
   #intro {
-    left: 370px;
+    left: 360px;
   }
   #welcome-section h1 {
     font-size: 3.5rem;
