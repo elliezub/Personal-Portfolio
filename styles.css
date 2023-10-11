@@ -287,12 +287,11 @@ ul {
 }
 
 #welcome-section h2 {
-  margin-top: 25px;
-  max-width: 425px;
+  margin-top: 16px;
 }
 
 #ilovecats {
-  margin-top: 10px;
+  margin-top: 16px;
   color: black;
 }
 
@@ -300,7 +299,7 @@ ul {
   text-decoration: none;
   background-color: var(--medpurple);
   color: white;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 10px 13px 12.5px 15px;
   border-radius: 25px;
   transition: 0.3s ease-in-out;
